@@ -22,7 +22,7 @@ app.get('/cadastrar', (requisicao, resposta) => {
 app.get('/usuarios/:id', (requisicao, resposta) => {
 
     const id = requisicao.params.id
-    console.log(id)
+    console.log(`Acessando dados do usuário ${id}`)
 
     resposta.sendFile(`${caminhoBase}/usuarios.html`)
 })
